@@ -52,12 +52,6 @@ export class SettingsPage {
     });
   }
 
-  async clickSettingsButton() {
-    await this.step(`Click the 'Settings' button`, async () => {
-      await this.settingsButton.click();
-    });
-  }
-
   async clickLogoutButton() {
     await this.step(`Click the 'Logout' button`, async () => {
       await this.logoutButton.click();

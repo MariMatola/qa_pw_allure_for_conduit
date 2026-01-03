@@ -2,7 +2,6 @@ import { test } from '../../_fixtures/fixtures';
 import { signUpUser } from '../../../src/ui/actions/auth/signUpUser';
 import { SettingsPage } from '../../../src/ui/pages/SettingsPage';
 import { ProfilePage } from '../../../src/ui/pages/ProfilePage';
-import { SignInPage } from '../../../src/ui/pages/auth/SignInPage';
 
 test.beforeEach(async ({ page, user }) => {
   await signUpUser(page, user);
@@ -12,7 +11,6 @@ test('Add profile picture URL from settings', async ({
     homePage, page
   }) => {
       const settingsPage = new SettingsPage(page);
-      const profilePage = new ProfilePage(page);
       const profilePictureUrl = 'https://example.com/profile.jpg';
       await homePage.clickSettingsButton();
   
