@@ -1,9 +1,9 @@
-import { test as base } from '@playwright/test';
+import { test as genericTest } from './fixturesGeneric';
 import { SignUpPage } from '../../src/ui/pages/auth/SignUpPage';
 import { SignInPage } from '../../src/ui/pages/auth/SignInPage';
 import { HomePage } from '../../src/ui/pages/HomePage';
 
-export const test = base.extend<{
+export const test = genericTest.extend<{
   signUpUsers;
   signUpPage;
   signInPage;
