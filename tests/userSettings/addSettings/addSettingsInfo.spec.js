@@ -21,7 +21,6 @@ test('Add profile picture URL from settings', async ({
       await settingsPage.assertProfilePictureUrlIsUpdated(profilePictureUrl);
   });
   
-//   Add short bio from settings
 test('Add short bio from settings', async ({
     homePage, page
   }) => {

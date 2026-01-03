@@ -3,8 +3,8 @@ import { Logger } from '../../src/common/logger/Logger';
 import { generateNewUserData } from '../../src/common/testData/generateNewUserData';
 import * as allure from 'allure-js-commons';
 import { parseTestTreeHierarchy } from '../../src/common/helpers/allureHelpers';
-import * as fs from 'fs';
-import * as path from 'path';
+import fs from 'fs';
+import path from 'path';
 
 export const test = base.extend<
   {
@@ -71,8 +71,7 @@ export const test = base.extend<
   addAllureTestHierarchy: [
     async ({ logger }, use, testInfo) => {
       const fileName = testInfo.file;
-      console.log('fileName', fileName);
-
+     
       const [parentSuite, suite, subSuite] = parseTestTreeHierarchy(
         fileName,
         logger,

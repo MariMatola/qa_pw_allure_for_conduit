@@ -4,7 +4,7 @@ import { SignInPage } from '../../src/ui/pages/auth/SignInPage';
 import { HomePage } from '../../src/ui/pages/HomePage';
 
 export const test = genericTest.extend<{
-  signUpUsers;
+//   signUpUsers;
   signUpPage;
   signInPage;
   homePage;
